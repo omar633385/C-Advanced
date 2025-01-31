@@ -16,7 +16,7 @@ namespace Session01Generics
             for (int i = 0; i < n - 1; i++)
             {
                 isswapped = false;
-
+                 
                 // Last i elements are already sorted, so we don't need to check them
                 for (int j = 0; j < n - 1 - i; j++)
                 {
