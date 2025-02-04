@@ -37,20 +37,29 @@ namespace Session02Collections
             #endregion
 
             #region Q3
-            int capacity = 3;
-            FixedSizeList<int> list=new FixedSizeList<int> (capacity);
-            try
-            {
-                list.Add (0);
-                list.Add(1);
-                list.Add(2);
-                list.Add(3);
-                list.GetValue(5);
-            }
-            catch (Exception ex) {
-                Console.WriteLine(ex.Message);
-            }
+            //int capacity = 3;
+            //FixedSizeList<int> list=new FixedSizeList<int> (capacity);
+            //try
+            //{
+            //    list.Add (0);
+            //    list.Add(1);
+            //    list.Add(2);
+            //    list.Add(3);
+            //    list.GetValue(5);
+            //}
+            //catch (Exception ex) {
+            //    Console.WriteLine(ex.Message);
+            //}
             #endregion
+
+            #region Q4
+            
+                //int idx = Helper.GetIndexOfFirstUnRepeatedChar("yoyo");
+                //Console.WriteLine(idx);
+            
+
+            #endregion
+
 
 
 

@@ -36,7 +36,23 @@ namespace Session02Collections
         }
         #endregion
 
-        #region Question 3
+        #region Question 4
+        public static int GetIndexOfFirstUnRepeatedChar(string str) {
+            
+            Dictionary<char,int> dict = new Dictionary<char,int>();
+            foreach (char c in str) {
+                if (!dict.ContainsKey(c))
+                    dict[c] = 1;
+                else
+                    dict[c]++;
+            }
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (dict[str[i]] == 1)
+                    return i;
+            }
+            return -1;
+        }
 
         #endregion
 
