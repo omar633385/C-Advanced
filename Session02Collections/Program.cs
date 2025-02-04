@@ -26,7 +26,7 @@ namespace Session02Collections
             #endregion
 
             #region 2.	You are given a list of integers. Your task is to find and return a new list containing only the even numbers from the given list.
-            
+
             //List<int> Numbers = new List<int> {1,2,3,4,5,6,7,8,9,10 };
             //List<int>EvenNumbers= Helper.GetEvenNumbers(Numbers);
             //foreach (var item in EvenNumbers)
@@ -36,6 +36,21 @@ namespace Session02Collections
 
             #endregion
 
+            #region Q3
+            int capacity = 3;
+            FixedSizeList<int> list=new FixedSizeList<int> (capacity);
+            try
+            {
+                list.Add (0);
+                list.Add(1);
+                list.Add(2);
+                list.Add(3);
+                list.GetValue(5);
+            }
+            catch (Exception ex) {
+                Console.WriteLine(ex.Message);
+            }
+            #endregion
 
 
 
