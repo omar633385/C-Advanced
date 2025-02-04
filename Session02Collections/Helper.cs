@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -92,9 +93,28 @@ namespace Session02Collections
 
                 Console.WriteLine(count);
             }
-            #endregion
-
 
         }
+        #endregion
+
+        #region Question 6
+        public static bool IsPalindrome(int[] array)
+        {
+            int flag = 0;
+            int n=array.Length;
+            for (int i = 0; i < n/2; i++)
+            {
+                if (array[i] != array[n - i - 1])
+                {
+                    flag = 1;
+                    break;
+                }
+            }
+            if (flag == 1)
+                return false;
+            else
+                return true;
+        }
+        #endregion
     }
 }

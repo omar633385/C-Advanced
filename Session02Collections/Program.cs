@@ -61,23 +61,49 @@ namespace Session02Collections
             #endregion
 
             #region Q5
-            int ArrayLength;
-            int No_Of_Queries;
+            //    int ArrayLength;
+            //    int No_Of_Queries;
+            //    bool flag;
+            //    do
+            //    {
+            //        Console.WriteLine("Enter The Array Size");
+            //        flag = int.TryParse(Console.ReadLine(), out ArrayLength);
+            //        if (!flag)
+            //            Console.WriteLine("Enter Valid Input for Array Size");
+            //    } while (!flag);
+            //    do
+            //    {
+            //        Console.WriteLine("Enter The No_Of_Queries");
+
+            //        flag = int.TryParse(Console.ReadLine(), out No_Of_Queries);
+            //        if (!flag)
+            //            Console.WriteLine("Enter Valid Input for No_Of_Queries");
+            //    } while (!flag);
+            //    int[] Numbers = new int[ArrayLength];
+            //    for (int i = 0; i < ArrayLength; i++)
+            //    {
+            //        do
+            //        {
+            //            Console.Write($"Enter Array Element no {i + 1}: ");
+            //            flag = int.TryParse(Console.ReadLine(), out Numbers[i]);
+            //            if (!flag)
+            //                Console.WriteLine("Enter valid input for array it only accept integer values");
+            //        } while (!flag);
+            //    }
+            //    Helper.print_how_many_numbers_in_array_that_is_greater_than_X(Numbers, No_Of_Queries);
+
+            //}
+            #endregion
+
+            #region Q6
             bool flag;
+            int ArrayLength;
             do
             {
                 Console.WriteLine("Enter The Array Size");
                 flag = int.TryParse(Console.ReadLine(), out ArrayLength);
                 if (!flag)
                     Console.WriteLine("Enter Valid Input for Array Size");
-            } while (!flag);
-            do
-            {
-                Console.WriteLine("Enter The No_Of_Queries");
-
-                flag = int.TryParse(Console.ReadLine(), out No_Of_Queries);
-                if (!flag)
-                    Console.WriteLine("Enter Valid Input for No_Of_Queries");
             } while (!flag);
             int[] Numbers = new int[ArrayLength];
             for (int i = 0; i < ArrayLength; i++)
@@ -90,13 +116,16 @@ namespace Session02Collections
                         Console.WriteLine("Enter valid input for array it only accept integer values");
                 } while (!flag);
             }
-            Helper.print_how_many_numbers_in_array_that_is_greater_than_X(Numbers, No_Of_Queries);
+            if(Helper.IsPalindrome(Numbers))
+                Console.WriteLine("Yes");
+            else
+                Console.WriteLine("No");
 
+            #endregion
         }
-        #endregion
-    }
 
 
-        
+
     }
+}
 
