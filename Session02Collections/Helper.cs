@@ -116,5 +116,40 @@ namespace Session02Collections
                 return true;
         }
         #endregion
+
+        #region Question 7
+        public static int RemoveDuplicates(int[] array)
+        {
+            int n = array.Length;
+            Array.Sort(array);
+            int j = 0;
+            for (int i = 1; i < n; i++)
+            {
+                if (array[i] != array[j])
+                {
+                    j++;
+                    array[j] = array[i];
+                }
+            }
+            return j + 1;
+
+       
+        }
+        #endregion
+
+        #region 8.	 Given an array list , implement a function to remove all odd numbers from it.
+
+        public static ArrayList RemoveOddNumbers(ArrayList Numbers)
+        {
+            ArrayList EvenNumbers = new ArrayList();
+
+            foreach (var item in Numbers)
+            {
+                if ((int)item % 2 == 0)
+                    EvenNumbers.Add(item);
+            }
+            return EvenNumbers;
+        }
+        #endregion
     }
 }

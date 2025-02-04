@@ -96,32 +96,51 @@ namespace Session02Collections
             #endregion
 
             #region Q6
-            bool flag;
-            int ArrayLength;
-            do
-            {
-                Console.WriteLine("Enter The Array Size");
-                flag = int.TryParse(Console.ReadLine(), out ArrayLength);
-                if (!flag)
-                    Console.WriteLine("Enter Valid Input for Array Size");
-            } while (!flag);
-            int[] Numbers = new int[ArrayLength];
-            for (int i = 0; i < ArrayLength; i++)
-            {
-                do
-                {
-                    Console.Write($"Enter Array Element no {i + 1}: ");
-                    flag = int.TryParse(Console.ReadLine(), out Numbers[i]);
-                    if (!flag)
-                        Console.WriteLine("Enter valid input for array it only accept integer values");
-                } while (!flag);
-            }
-            if(Helper.IsPalindrome(Numbers))
-                Console.WriteLine("Yes");
-            else
-                Console.WriteLine("No");
+            //bool flag;
+            //int ArrayLength;
+            //do
+            //{
+            //    Console.WriteLine("Enter The Array Size");
+            //    flag = int.TryParse(Console.ReadLine(), out ArrayLength);
+            //    if (!flag)
+            //        Console.WriteLine("Enter Valid Input for Array Size");
+            //} while (!flag);
+            //int[] Numbers = new int[ArrayLength];
+            //for (int i = 0; i < ArrayLength; i++)
+            //{
+            //    do
+            //    {
+            //        Console.Write($"Enter Array Element no {i + 1}: ");
+            //        flag = int.TryParse(Console.ReadLine(), out Numbers[i]);
+            //        if (!flag)
+            //            Console.WriteLine("Enter valid input for array it only accept integer values");
+            //    } while (!flag);
+            //}
+            //if(Helper.IsPalindrome(Numbers))
+            //    Console.WriteLine("Yes");
+            //else
+            //    Console.WriteLine("No");
 
             #endregion
+
+            #region Q7
+            //int[] a ={ 1, 2, 3, 1, 4, 2, 1, 5 };
+            //int n=Helper.RemoveDuplicates(a);
+            //for (int i = 0; i < n; i++)
+            //{
+            //    Console.WriteLine(a[i]);
+            //}
+            #endregion
+
+            #region Q8
+            ArrayList numbers = new ArrayList { 1, 2, 3, 1, 4, 2, 1, 5 };
+            ArrayList EvenNumbers=Helper.RemoveOddNumbers(numbers);
+            foreach (var number in EvenNumbers)
+            {
+                Console.WriteLine(number);
+            }
+            #endregion
+
         }
 
 
