@@ -30,5 +30,34 @@ namespace Session03CollectionP2
         }
         #endregion
 
+
+        #region Given a Stack, implement a function to check if a string of parentheses is balanced using a stack.
+
+        public static bool IsBalanced(string str)
+        {
+            Stack<char> stack = new Stack<char>();
+            foreach (var item in str)
+            {
+                if (item == '(' || item == '{' || item == '[')
+                    stack.Push(item);
+                else
+                {
+                    if (stack.Count > 0 &&
+                        ((stack.Peek() == '(' && item == ')') ||
+                         (stack.Peek() == '{' && item == '}') ||
+                         (stack.Peek() == '[' && item == ']')))
+
+                        stack.Pop();
+
+                    else
+                        return false;
+
+                }
+
+            }
+            return stack.Count == 0;
+        } 
+        #endregion
+
     }
 }
