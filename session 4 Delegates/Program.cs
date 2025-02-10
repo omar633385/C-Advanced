@@ -31,15 +31,14 @@ namespace session_4_Delegates
             //{
             //    return b.ISBN;
             //};
-            //del(b);
+            //LibraryEngine.ProcessBooks(books, del.Invoke);
 
             #endregion
 
             #region d)	Lambda Expression (GetPublicationDate).
 
             BookFuncDelegate del = (Book b) => b.PublicationDate.ToString();
-            Console.WriteLine(del(b));
-
+            LibraryEngine.ProcessBooks(books, del.Invoke);
             #endregion
         }
     }
