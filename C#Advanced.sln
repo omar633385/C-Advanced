@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session02Collections", "Ses
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session03CollectionP2", "CollectionsP2\Session03CollectionP2.csproj", "{854814C3-3B0C-496B-8537-86FBEA066B3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "session 4 Delegates", "session 4 Delegates\session 4 Delegates.csproj", "{88608FEA-E6A7-4E80-BC9C-F698825FC8FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{854814C3-3B0C-496B-8537-86FBEA066B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{854814C3-3B0C-496B-8537-86FBEA066B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{854814C3-3B0C-496B-8537-86FBEA066B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88608FEA-E6A7-4E80-BC9C-F698825FC8FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88608FEA-E6A7-4E80-BC9C-F698825FC8FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88608FEA-E6A7-4E80-BC9C-F698825FC8FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88608FEA-E6A7-4E80-BC9C-F698825FC8FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
