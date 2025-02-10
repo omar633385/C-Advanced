@@ -21,9 +21,18 @@ namespace session_4_Delegates
             #endregion
 
             #region b)	Use the Proper build in delegate. 
-            Func<Book, string> BookFunc;
-            BookFunc = BookFunctions.GetTitle;
-            LibraryEngine.ProcessBooks(books, BookFunc);
+            //Func<Book, string> BookFunc;
+            //BookFunc = BookFunctions.GetTitle;
+            //LibraryEngine.ProcessBooks(books, BookFunc);
+            #endregion
+
+            #region c)	Anonymous Method (GetISBN).
+            BookFuncDelegate del = delegate (Book b)
+            {
+                return b.ISBN;
+            };
+            del(b);
+
             #endregion
         }
     }
