@@ -11,16 +11,20 @@ namespace session_4_Delegates
             books.Add(b);
             books.Add(new Book("456", "book 2", new string[] { "omar", "ahmed" }, DateTime.Now, 200));
             #region a)	Create User Defined Delegate with the same signature of methods existed in Bookfunctions class.
-            string result = BookFunctions.GetTitle(b);
-            //step 1
-            BookFuncDelegate del;
-            //step 2
-            del = new BookFuncDelegate(GetTitle);
-            LibraryEngine.ProcessBooks(books, del);
+            //string result = BookFunctions.GetTitle(b);
+            ////step 1
+            //BookFuncDelegate del;
+            ////step 2
+            //del = new BookFuncDelegate(GetTitle);
+            //LibraryEngine.ProcessBooks(books, del);
 
             #endregion
 
-
+            #region b)	Use the Proper build in delegate. 
+            Func<Book, string> BookFunc;
+            BookFunc = BookFunctions.GetTitle;
+            LibraryEngine.ProcessBooks(books, BookFunc);
+            #endregion
         }
     }
 }

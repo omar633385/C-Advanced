@@ -12,7 +12,7 @@ namespace session_4_Delegates
      
 
 
-        public static void ProcessBooks(List<Book> blist, BookFuncDelegate bookFunc)
+        public static void ProcessBooks(List<Book> blist, /*BookFuncDelegate*/Func<Book, string> bookFunc)
         {
             foreach (Book B in blist)
             {
