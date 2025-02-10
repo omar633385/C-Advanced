@@ -27,11 +27,18 @@ namespace session_4_Delegates
             #endregion
 
             #region c)	Anonymous Method (GetISBN).
-            BookFuncDelegate del = delegate (Book b)
-            {
-                return b.ISBN;
-            };
-            del(b);
+            //BookFuncDelegate del = delegate (Book b)
+            //{
+            //    return b.ISBN;
+            //};
+            //del(b);
+
+            #endregion
+
+            #region d)	Lambda Expression (GetPublicationDate).
+
+            BookFuncDelegate del = (Book b) => b.PublicationDate.ToString();
+            Console.WriteLine(del(b));
 
             #endregion
         }
