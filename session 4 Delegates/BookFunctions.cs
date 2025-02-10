@@ -8,6 +8,8 @@ namespace session_4_Delegates
 {
     internal class BookFunctions
     {
+        //step 0
+        public delegate string BookFuncDelegate(Book B);
         public static string GetTitle(Book B)
         {
             return B.Title;
